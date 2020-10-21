@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="Java" class="cyber.services.Java">
+    <!-- set up setter injection -->
+    <property name="extraSession" ref="officeHours"/>
+</bean>
+
+<bean id ="Selenium" class="cyber.services.Selenium"></bean>
+
+    <bean id ="officeHours" class = "cyber.services.OfficeHours"></bean>
+
+
+
+
+</beans>
