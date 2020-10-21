@@ -4,14 +4,12 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<bean id="Java" class="cyber.services.Java">
-    <!-- set up setter injection -->
-    <property name="extraSession" ref="officeHours"/>
+<bean id="Java" class="cyber.services.Java" scope="prototype">
+
 </bean>
 
 <bean id ="Selenium" class="cyber.services.Selenium"></bean>
 
-    <bean id ="officeHours" class = "cyber.services.OfficeHours"></bean>
 
 
 

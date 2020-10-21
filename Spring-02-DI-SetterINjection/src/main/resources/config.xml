@@ -6,14 +6,11 @@
 
 <bean id="Java" class="cyber.services.Java">
     <!-- set up setter injection -->
-    <property name="officeHours" ref="officeHours"/>
+    <property name="extraSession" ref="officeHours"/>
 </bean>
 
 <bean id ="Selenium" class="cyber.services.Selenium"></bean>
 
     <bean id ="officeHours" class = "cyber.services.OfficeHours"></bean>
-
-
-
 
 </beans>
