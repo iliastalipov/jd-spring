@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 @Component
 public class Kitchen implements Floor {
 
-    @Value("${radius")
+    @Value("${radius}")
     BigDecimal radius;
     @Override
     public BigDecimal getArea() {
